@@ -1,0 +1,56 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estilo del tema de la aplicación -->
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">@dimen/actionbar_compat_height</item>
+        <item name="android:windowTitleBackgroundStyle">@style/ActionBarCompat</item>
+        <item name="android:windowContentOverlay">@drawable/actionbar_shadow</item>
+
+        <!-- para la instanciación programática -->
+        <item name="actionbarCompatTitleStyle">@style/ActionBarCompatTitle</item>
+        <item name="actionbarCompatItemStyle">@style/ActionBarCompatItem</item>
+        <item name="actionbarCompatItemHomeStyle">@style/ActionBarCompatHomeItem</item>
+        <item name="actionbarCompatProgressIndicatorStyle">@style/ActionBarCompatProgressIndicator</item>
+    </style>
+
+    <!-- Estilo para la ActionBar -->
+    <style name="ActionBarCompat">
+        <item name="android:background">#191919</item>
+    </style>
+
+    <!-- Base para los ítems de la ActionBar -->
+    <style name="ActionBarCompatItemBase">
+        <!-- layout_width/height debe ser configurado en el código -->
+        <item name="android:scaleType">center</item>
+        <item name="android:background">@drawable/actionbar_compat_item</item>
+    </style>
+
+    <!-- Estilo para el indicador de progreso en la ActionBar -->
+    <style name="ActionBarCompatProgressIndicator" parent="android:Widget.ProgressBar.Large">
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <!-- Base para el título de la ActionBar -->
+    <style name="ActionBarCompatTitleBase">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <!-- Estilo para el título de la ActionBar -->
+    <style name="ActionBarCompatTitle" parent="ActionBarCompatTitleBase">
+        <item name="android:textColor">@color/actionbar_title_color</item>
+    </style>
+
+    <!-- Estilo para los ítems de la ActionBar -->
+    <style name="ActionBarCompatItem" parent="ActionBarCompatItemBase">
+    </style>
+
+    <!-- Estilo para los ítems de inicio de la ActionBar -->
+    <style name="ActionBarCompatHomeItem" parent="ActionBarCompatItemBase">
+    </style>
+
+</resources>
