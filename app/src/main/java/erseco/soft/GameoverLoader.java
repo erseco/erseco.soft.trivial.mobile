@@ -41,9 +41,7 @@ public class GameoverLoader implements OnClickListener {
 			
 			//Ponemos el botón de game over en verde
 			button.setBackgroundResource(R.drawable.button_green);
-			
-			final ImageButton buttonSubmitScore = (ImageButton) at.findViewById(R.id.button_submit_score);
-			buttonSubmitScore.setOnClickListener(this);			
+
 			
 		} else {
 			
